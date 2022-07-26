@@ -1,0 +1,111 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  padding:20px ;
+  margin-top: 20px;
+}
+
+#board{
+  
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+
+  height:90vh;
+  width: 90vh;
+}
+
+.square{
+  border: none;
+  width: 4rem;
+  height:4rem;
+  background-color: rgb(43, 148, 148);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+.square:focus{
+  outline: none;
+}
+
+.show-btn{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+ 
+}
+
+.flex-h{
+  display: flex;
+
+  align-items: center;
+}
+
+.palette{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+  /* background-color: rgb(38, 36, 36); */
+}
+
+
+.palette > button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+li{
+
+  border-radius: 1vmax;
+  margin: 4px;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.yellow{
+  background-color: #f4b41a;
+}
+.blue{
+  background-color: #143d59;
+}
+.navy{
+  background-color: navy;
+}
+.teal{
+  background-color: teal;
+}
+.black{
+  background-color: rgb(49, 47, 47);
+}
