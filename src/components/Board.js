@@ -7,12 +7,6 @@ import { checkSolved } from "../utils/checkSolved";
 import { adjustPuzzle } from "../utils/adjustPuzzle";
 import { handleChange } from "../utils/handleChange";
 
-//ALLOW FOR CHANGE OF THEME
-//IMPROVE DESIGN
-//ADD RESET BUTTON
-//CLEAN UP CODE
-//UPLOAD TO GITHUB
-
 export default function Board({ primaryColor }) {
   const [puzzle, setPuzzle] = useState(makepuzzle);
   const [puzzleSolution, setPuzzleSolution] = useState(solvepuzzle(puzzle));
